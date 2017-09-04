@@ -28,7 +28,10 @@ def calculatingProbability(bigramDict,countDict):
         if previousWord in countDict:
             wordOccurence = countDict[previousWord]
             probability = bigramCount/wordOccurence
-            bigramProbability[bigram] = probability
+            if(probability == 1):
+                bigramProbability[bigram] = 0.999999
+            else:
+                bigramProbability[bigram] = probability
         else:
             #Making the probability a really small number
             bigramProbability[bigram] = 0.000001
@@ -38,16 +41,19 @@ def calculatingProbability(bigramDict,countDict):
 with open('nonsense.txt', 'r') as inputFile:
     for line in inputFile:
         line = line.strip('\n')
-        inputList.append(line)
+        if(line == ''):
+            inputList.append("End")
+            inputList.append("Start")
+        else:
+            inputList.append(line)
 
 bigramDict = creatingBigrams(inputList)
 countDict = wordCount(inputList)
 probabilityTable = calculatingProbability(bigramDict,countDict)
 
 print ("{:<15} {:<15}".format('Bigram','Probability'))
+
 for item in probabilityTable.items():
-    i = 0
-    print ("{:<15} {:<15}".format(item[i][0], item[1]))
-    i+= 1
+    print ("{:<15} {:<15}".format(item[0][0], item[1]))
 
 
