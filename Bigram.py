@@ -6,7 +6,7 @@ from __future__ import print_function
 from itertools import permutations
 from random import choice
 
-#data structures
+#Data Structures
 wordCount = {}
 bigramsCount = {}
 allbigrams = {}
@@ -31,11 +31,11 @@ with open('nonsense.txt', 'r') as inputFile:
         #end of line, append </s>
         if line == ' \n' or line == '\n':
             if (prev, end) in bigramsCount:
-                bigramsCount[(prev, end)] = bigramsCount[(prev, end)] + 1
+                bigramsCount[(prev, end)] += 1
             else:
                 bigramsCount[(prev, end)] = 1
             if line in wordCount:
-                wordCount[line] = wordCount[line] + 1
+                wordCount[line] += 1
             else:
                 wordCount[line] = 1
             prev = start
@@ -45,12 +45,12 @@ with open('nonsense.txt', 'r') as inputFile:
         else:
             line = line.strip()
             if (prev, line) in bigramsCount:
-                bigramsCount[(prev, line)] = bigramsCount[(prev, line)] + 1
+                bigramsCount[(prev, line)] += 1
             else:
                 bigramsCount[(prev, line)] = 1
             vocab.add(line)
             if line in wordCount:
-                wordCount[line] = wordCount[line] + 1
+                wordCount[line] += 1
             else:
                 wordCount[line] = 1
             prev = line
@@ -62,14 +62,13 @@ with open('nonsense.txt', 'r') as inputFile:
 
 #calculate bigram probabilities using training data(bigramsCount)
 for bg in bigramsCount:
-    p = bigramsCount[bg]
-    p = p/wordCount[bg[0]]
-    if p == 0:
+    wordProbability = bigramsCount[bg]/wordCount[bg[0]]
+    if wordProbability == 0:
         bigramprob[bg] = 0.0000000000000001
-    elif p == 1:
+    elif wordProbability == 1:
         bigramprob[bg] = 0.9999999999999999
     else:
-        bigramprob[bg] = p
+        bigramprob[bg] = wordProbability
 '''
 #check
 print ("{:<30} {:<30}".format('Bigram','Probability'))
@@ -78,8 +77,7 @@ for item in bigramprob:
     print ("{!s:<30} {:<30}".format(item,bigramprob[item]))
 #print("Bigram probabilities before test (size {}): \n{}\n".format(len(bigramprob), bigramprob))
 '''
-
-#add test case words to vocabulary and generate test case bigram counts
+#add the test case words to vocabulary and generate test case bigram counts
 wordCount[start] = wordCount[start] + len(test)
 wordCount[end] = wordCount[end] + len(test)
 for line in test:
@@ -110,25 +108,33 @@ for item in bigramprob:
 '''
 
 #generate all possible bigrams from vocabulary and add counts to bigramsCount
-for p in permutations(vocab, 2):
-    if p in bigramsCount:
-        allbigrams[p] = bigramsCount[p] + 1
+for permutation in permutations(vocab, 2):
+    if permutation in bigramsCount:
+        allbigrams[permutation] = bigramsCount[permutation] + 1
     else:
-        allbigrams[p] = 1
+        allbigrams[permutation] = 1
 
-#check
-#print("Generated bigrams (size {}): \n{}\n".format(len(allbigrams), allbigrams))
-for i in range(10):
-    p = choice(list(bigramsCount))
-    if bigramsCount[p] + 1 != allbigrams[p]:
-        print("Count error")
-        break
-
-#calculate bigram probabilities using allbigrams dict
+#Calculate bigram probabilities using add one smoothing to the allbigrams dict
 for bg in allbigrams:
-    smoothedprob[bg] = allbigrams[bg]/wordCount[bg[0]]
+    smoothedprob[bg] = allbigrams[bg]/(wordCount[bg[0]] + len(vocab))
 
 print ("{:<30} {:<30}".format('Bigram','Probability'))
 for item in smoothedprob:
     #print(item,bigramprob[item])
     print ("{!s:<30} {:<30}".format(item,smoothedprob[item]))
+
+#Counting the Individual Word Probabilities
+totalWordcount = 0
+for individualCount in wordCount.items():
+    totalWordcount += individualCount[1]
+wordProbability = {}
+
+for word in wordCount.items():
+    wordProbability[word] = word[1]/totalWordcount
+
+#print (wordProbability)
+
+
+
+
+
