@@ -26,7 +26,7 @@ test = ['I do not like them in a mouse .', 'I am Sam I am Sam', 'I do like them 
 prev = start
 wordCount[start] = 0
 wordCount[end] = 0
-with open('nonsense.txt', 'r') as inputFile:
+with open('C:/Users/Arpitha/Desktop/CL/nonsense.txt', 'r') as inputFile:
     for line in inputFile:
         #end of line, append </s>
         if line == ' \n' or line == '\n':
