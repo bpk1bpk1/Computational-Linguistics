@@ -1,0 +1,257 @@
+#Corrected uptil page 20
+%% TnT statistically tagged file, Fri Sep 22 16:42:00 2017
+%% lexicon     : wsj.tnt
+%% ngrams      : wsj.tnt
+%% corpus      : jerome.txt
+%% model       : trigrams
+%% sparse data : linear interpolation
+%%   lambda1 = 1.280337e-01   lambda2 = 2.760844e-01   lambda3 = 5.958819e-01
+%% unknown mode: statistics of singletons
+%% case of characters is significant
+%% using suffix trie up to length 10
+%% suffix backoff with theta = 9.744236e-02
+%% Thorsten Brants, thorsten@brants.net
+Then			RB
+I			PRP
+wondered		VBD
+how			WRB
+long			RB
+I			PRP
+had			VBD
+to			TO
+live			VB
+.			.
+
+I			PRP
+tried			VBD
+to			TO
+examine			VB
+myself			PRP
+.			.
+
+I			PRP
+felt			VBD
+my			PRP$
+pulse			NN
+.			.
+
+I			PRP
+could			MD
+not			RB
+at			IN
+first			JJ
+feel			VB
+any			DT
+pulse			NN
+at			IN
+all			DT
+.			.
+
+Then			RB
+,			,
+all			DT
+of			IN
+a			DT
+sudden			JJ
+,			,
+it			PRP
+seemed			VBD
+to			TO
+start			VB
+off			RP
+.			.
+
+I			PRP
+pulled			VBD
+out			IN
+my			PRP$
+watch			NN
+and			CC
+timed			VBD
+it			PRP
+.			.
+
+I			PRP
+made			VBD
+it			PRP
+a			DT
+hundred			CD
+and			CC
+forty-seven		JJR
+to			TO
+the			DT
+minute			NN
+.			.
+
+I			PRP
+tried			VBD
+to			TO
+feel			VB
+my			PRP$
+heart			NN
+.			.
+
+I			PRP
+could			MD
+not			RB
+feel			VB
+my			PRP$
+heart			NN
+.			.
+
+It			PRP
+had			VBD
+stopped			VBN
+beating			NN
+.			.
+
+I			PRP
+have			VBP
+since			RB
+been			VBN
+induced			VBN
+to			TO
+come			VB
+to			TO
+the			DT
+opinion			NN
+that			IN
+it			PRP
+must			MD
+have			VB
+been			VBN
+there			EX
+all			PDT
+the			DT
+time			NN
+,			,
+and			CC
+must			MD
+have			VB
+been			VBN
+beating			NN
+,			,
+but			CC
+I			PRP
+cannot			VBP
+account			NN
+for			IN
+it			PRP
+.			.
+
+I			PRP
+patted			VBD
+myself			PRP
+all			RB
+over			IN
+my			PRP$
+front			NN
+,			,
+from			IN
+what			WP
+I			PRP
+call			VBP
+my			PRP$
+waist			NN
+up			RP
+to			TO
+my			PRP$
+head			NN
+,			,
+and			CC
+I			PRP
+went			VBD
+a			DT
+bit			NN
+round			NN
+each			DT
+side			NN
+,			,
+and			CC
+a			DT
+little			JJR
+way			NN
+up			IN
+the			DT
+back			NN
+.			.
+
+But			CC
+I			PRP
+could			MD
+not			RB
+feel			VB
+or			CC
+hear			VB
+anything		NN
+.			.
+
+I			PRP
+tried			VBD
+to			TO
+look			VB
+at			IN
+my			PRP$
+tongue			NN
+.			.
+
+I			PRP
+stuck			VBD
+it			PRP
+out			RP
+as			RB
+far			RB
+as			IN
+ever			RB
+it			PRP
+would			MD
+go			VB
+,			,
+and			CC
+I			PRP
+shut			VBD
+one			CD
+eye			NN
+,			,
+and			CC
+tried			VBD
+to			TO
+examine			VB
+it			PRP
+with			IN
+the			DT
+other			JJ
+.			.
+
+I			PRP
+could			MD
+only			RB
+see			VB
+the			DT
+tip			NN
+,			,
+and			CC
+the			DT
+only			JJ
+thing			NN
+that			WDT
+I			PRP
+could			MD
+gain			VB
+from			IN
+that			WDT
+was			VBD
+to			TO
+feel			VB
+more			JJR
+certain			JJ
+than			IN
+before			RB
+that			IN
+I			PRP
+had			VBD
+scarlet			JJ
+fever			NN
+.			.
+%% 4 (1.76%) unknown tokens
+%% avg. 2.93 tags/token, 2.72 tags/known token
