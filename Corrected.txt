@@ -49,7 +49,7 @@ all			DT
 
 Then			RB
 ,			,
-all			DT
+all			RB
 of			IN
 a			DT
 sudden			JJ
@@ -133,7 +133,7 @@ beating			NN
 ,			,
 but			CC
 I			PRP
-cannot			VBP
+cannot			VB
 account			NN
 for			IN
 it			PRP
@@ -143,7 +143,7 @@ I			PRP
 patted			VBD
 myself			PRP
 all			RB
-over			IN
+over			RB
 my			PRP$
 front			NN
 ,			,
@@ -220,7 +220,7 @@ examine			VB
 it			PRP
 with			IN
 the			DT
-other			JJ
+other			NN
 .			.
 
 I			PRP
@@ -234,7 +234,7 @@ and			CC
 the			DT
 only			JJ
 thing			NN
-that			WDT
+that			IN
 I			PRP
 could			MD
 gain			VB
