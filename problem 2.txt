@@ -1,0 +1,13 @@
+Calculate the probabilities for the following POS tag sequences given the sentence “time flies like an arrow” and the probabilities on slide 6 of the POS tagging slides.
+
+NN NNS IN DT NN
+
+P(sentence|tags) = 0.6823 * 7.0727 * 1.6076 * 0.1610 * 21.8302 * 2.6512 * 31.4263 * 1.4192 * 38.0170 * 0.0215 = 2635.22586739
+
+JJ VBZ VB DT NN
+
+P(sentence|tags) = 0
+
+VB NNS RB DT NN
+
+P(sentence|tags) = 0.5294 * 0.0005 * 0.6566 * 0.1610 * 6.4721 * 0.5086 * 5.3113 * 1.4192 * 38.0170 * 0.0215 = 0.00056749626
