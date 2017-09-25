@@ -63,7 +63,7 @@ off			RP
 
 I			PRP
 pulled			VBD
-out			IN
+out			RP
 my			PRP$
 watch			NN
 and			CC
@@ -77,7 +77,7 @@ it			PRP
 a			DT
 hundred			CD
 and			CC
-forty-seven		JJR
+forty-seven		JJ
 to			TO
 the			DT
 minute			NN
@@ -120,7 +120,7 @@ it			PRP
 must			MD
 have			VB
 been			VBN
-there			EX
+there			RB
 all			PDT
 the			DT
 time			NN
@@ -169,7 +169,7 @@ side			NN
 ,			,
 and			CC
 a			DT
-little			JJR
+little			JJ
 way			NN
 up			IN
 the			DT
