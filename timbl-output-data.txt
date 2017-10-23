@@ -1,0 +1,65 @@
+Examine datafile 'train.csv' gave the following results:
+Number of Features: 5
+InputFormat       : C4.5
+
+Phase 1: Reading Datafile: train.csv
+Start:          0 @ Mon Oct 23 01:24:35 2017
+Finished:    2915 @ Mon Oct 23 01:24:35 2017
+Calculating Entropy         Mon Oct 23 01:24:35 2017
+Lines of data     : 715
+SkippedLines      : 2200
+DB Entropy        : 0.15431587
+Number of Classes : 3
+
+Feats	Vals	InfoGain	GainRatio
+    1    715	0.15431587	0.016274956
+    2      6	0.029191270	0.012643734
+    3      4	0.017529306	0.015005910
+    4      2	0.015277602	1.0000000
+    5      4	0.020047997	0.016033084
+
+Preparation took 0 seconds, 55 milliseconds and 432 microseconds
+Feature Permutation based on GainRatio/Values :
+< 4, 5, 3, 2, 1 >
+Phase 2: Building multi index on Datafile: train.csv
+Start:          0 @ Mon Oct 23 01:24:35 2017
+Finished:     715 @ Mon Oct 23 01:24:35 2017
+
+Phase 3: Learning from Datafile: train.csv
+Start:          0 @ Mon Oct 23 01:24:35 2017
+Finished:     715 @ Mon Oct 23 01:24:35 2017
+
+Size of InstanceBase = 1483 Nodes, (59320 bytes), 65.43 % compression
+Learning took 0 seconds, 218 milliseconds and 717 microseconds
+Examine datafile 'test.csv' gave the following results:
+Number of Features: 5
+InputFormat       : C4.5
+
+
+Starting to test, Testfile: test.csv
+Writing output in:          test.csv.IB1.O.gr.k1.out
+Algorithm     : IB1
+Global metric : Overlap
+Deviant Feature Metrics:(none)
+Weighting     : GainRatio
+Feature 1	 : 0.016274956064235
+Feature 2	 : 0.012643734265114
+Feature 3	 : 0.015005910305863
+Feature 4	 : 0.999999999999994
+Feature 5	 : 0.016033083583029
+
+Tested:      1 @ Mon Oct 23 01:24:35 2017
+Tested:      2 @ Mon Oct 23 01:24:35 2017
+Tested:      3 @ Mon Oct 23 01:24:35 2017
+Tested:      4 @ Mon Oct 23 01:24:35 2017
+Tested:      5 @ Mon Oct 23 01:24:35 2017
+Tested:      6 @ Mon Oct 23 01:24:35 2017
+Tested:      7 @ Mon Oct 23 01:24:35 2017
+Tested:      8 @ Mon Oct 23 01:24:35 2017
+Tested:      9 @ Mon Oct 23 01:24:35 2017
+Tested:     10 @ Mon Oct 23 01:24:35 2017
+Tested:    100 @ Mon Oct 23 01:24:36 2017
+Ready:     556 @ Mon Oct 23 01:24:36 2017
+Seconds taken: 0.0571 (9729.64 p/s)
+
+overall accuracy:        0.974820  (542/556), of which 1 exact matches 

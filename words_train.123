@@ -1,0 +1,10 @@
+%% n-grams created Sun Oct 22 20:05:10 2017 from file
+%%     words_train.csv
+%% the corpus contained 50242 words
+%% this file contains 2 uni-, 2 bi-, and 2 trigrams
+__$	2
+	???	1
+		???	1
+???	50242
+	???	50241
+		???	50240
