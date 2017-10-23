@@ -1,0 +1,6 @@
+TiMBL 6.4.2 (c) ILK 1998 - 2011.
+Tilburg Memory Based Learner
+Induction of Linguistic Knowledge Research Group, Tilburg University
+CLiPS Computational Linguistics Group, University of Antwerp
+Mon Oct 23 01:20:13 2017
+
